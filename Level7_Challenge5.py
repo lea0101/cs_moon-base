@@ -9,6 +9,6 @@ port = 1025
 sender = "bob-roswell-1947@gmail.com"
 recipent = "zultron@thebigeye.com"
 s = smtplib.SMTP(host=host,port=port)
-s.sendmail(from_addr=sender,to_addrs=recipent, msg="this is my message")
+s.sendmail(from_addr=sender,to_addrs=recipent, msg="Hello, what's up?")
 
 

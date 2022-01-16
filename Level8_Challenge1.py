@@ -1,3 +1,5 @@
+#NOTE: I tried testing this and it took a long time to run--this might be the wrong file, will upload when the correct one is found.
+
 
 # Connect over TCP to the following server 'localhost', 10000
 # Initiate communication with GET to retrieve the encrypted messages.
