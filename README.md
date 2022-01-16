@@ -11,7 +11,7 @@ for requirement in freeze(local_only=True):
 ```
     
 It returns this:
-
+```
 boto3==1.18.55
 botocore==1.21.55
 jmespath==0.10.0
@@ -22,7 +22,7 @@ s3transfer==0.5.0
 setuptools==56.0.0
 six==1.16.0
 urllib3==1.26.6
-
+```
 
 So I believe thesea are the packages available to us beyond pre-installed python packages, like os and base64. That is why some of these scripts are complicated because the available packages are limited. 
 Some of the functions of the os package are also limited.
