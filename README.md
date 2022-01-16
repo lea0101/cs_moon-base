@@ -24,5 +24,5 @@ six==1.16.0
 urllib3==1.26.6
 ```
 
-So I believe thesea are the packages available to us beyond pre-installed python packages, like os and base64. That is why some of these scripts are complicated because the available packages are limited. 
-Some of the functions of the os package are also limited.
+So I believe these are the packages available to us beyond pre-installed python packages, like os and base64. That is why some of these scripts are complicated because the available packages are limited. 
+Some of the functions of the os package are also limited, like os.system() not working.
